@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'maven:3-alpine'
             args '-v $HOME/.m2:/root/.m2'
-            dockerExecutable '/usr/local/bin/docker'  // 显式指定路径
+            // 已移除 dockerExecutable
         }
     }
     stages {
